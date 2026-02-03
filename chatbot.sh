@@ -23,11 +23,11 @@ do
       echo " process    - fork, exec, wait demo"
       ;;
     priority)
-      g++ scheduler1.cpp -o scheduler1
+      g++ priorityscheduler.cpp -o scheduler1
       ./scheduler1
       ;;
     fcfs)
-      g++ scheduler2.cpp -o scheduler2
+      g++ fcfsscheduler.cpp -o scheduler2
       ./scheduler2
       ;;
     game)
@@ -43,6 +43,8 @@ do
       ./file
       ;;
     process)
+      g++ processes.cpp -o process
+      ./process
       ;;
     exit)
       echo "Chatbot exiting..."
